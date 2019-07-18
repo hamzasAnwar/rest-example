@@ -10,7 +10,7 @@ buildscript {
 }
 
 version "0.1"
-group "rest.example"
+group "com.rest.example"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -31,6 +31,7 @@ configurations {
 
 dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
+    compile "org.grails:grails-datastore-rest-client"
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
